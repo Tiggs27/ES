@@ -11,7 +11,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 # Auxiliary function, calls a step function and returns its output
 def stepFunctionExecute(state_machine_arn,input_stepfunc):
-    #sfnclient = boto3.client('stepfunctions', region_name='us-east-1', aws_access_key_id="ASIAUQ2BFUAM22QBPEYA", aws_secret_access_key="SsnSqsd8lCS5wCmqVe/SUuL1/1D2qeZrWEKPnYSR", aws_session_token="FwoGZXIvYXdzEEQaDAy7y//RmkH+kMQOpyLLAU2rUcbP3DRfb6yneuLrMo5k+qYHBcqFIENnrQ3xkBb8dQSLibp4ZAPeQdgVWNh0vCi26UYaMWd6tQ3ByAOrIamJzgTZXFNZmQu0Hll61x7+iCrQvrZcytRsGJVAyE1kreS/iP4dQpCO0j1Wzl6sOk0+vLsu3GLqL+ygYAiGo1PyJHNK1gs2FFAHnlamWUE8hTYkcm1Wla9LT8gamQWDzaf1tjPys6RmSE2uWuwISseeB6t4yXx/Uc20CGQ8NN7sxOW908LpEJsdSYEnKJqHjI4GMi34zuNiKG3BP3xx6569Xi0E4tYbWxm6zjWqpatR3F79UI5q3a0WpoHmKQrhcYU=")
+    #sfnclient = boto3.client('stepfunctions', region_name='us-east-1', aws_access_key_id="", aws_secret_access_key="", aws_session_token="")
     sfnclient = boto3.client('stepfunctions', region_name='us-east-1')
     now = datetime.now()
     current_time = now.strftime("%H%M%S")
